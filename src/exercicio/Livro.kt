@@ -1,10 +1,16 @@
 package exercicio
 
 data class Livro(
-    val codigo: String,
+    override val codigo: String,
     var titulo: String,
     var autor: String,
     var anoLancamento: String,
-    var quantidadeEstoque: Int,
-    var preco: Double
-)
+    override var quantidadeEstoque: Int,
+    override var preco: Double
+) : Produto {
+
+    override fun toString(): String {
+        return "ProdutoUnitario(codigo=$codigo, descricao='$descricao', preco=$preco)"
+    }
+
+}
