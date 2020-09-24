@@ -2,6 +2,6 @@ package exercicio
 
 interface Produto{
     var preco: Double
-    var codigo: String
+    val codigo: String
     var quantidadeEstoque: Int
 }

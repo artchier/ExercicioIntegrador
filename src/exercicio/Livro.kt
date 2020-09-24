@@ -10,7 +10,7 @@ data class Livro(
 ) : Produto {
 
     override fun toString(): String {
-        return "ProdutoUnitario(codigo=$codigo, descricao='$descricao', preco=$preco)"
+        return "Livro (codigo=$codigo, título='$titulo', preco=$preco, quantidade=$quantidadeEstoque)"
     }
 
 }
